@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Qunit</title>
+	<link rel="stylesheet" href="qunit-1.13.0.css">
+</head>
+<body>
+	<div id="qunit"></div>
+	<div id="qunit-fixture"></div>
+	<script src="qunit-1.13.0.js"></script>
+	<script src="../build/test.min.js"></script>
+	<script>
+		test('hello, world!', function(){
+			ok(1 == '1', 'hello!');
+		});
+
+		test('add', function(){
+			equal(module.add(1, 1), 2, '1 + 1 must be 2');
+			equal(module.add(2, 2), 4, '2 + 2 must be 4');
+		});
+	</script>
+</body>
+</html>
